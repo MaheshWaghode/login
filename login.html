@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <sty>
+        <style>
+       body{
+            background-color: rgb(218, 213, 213);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        header{
+            background-color:white;
+            border: 2px solid black;
+            width: 100vw;
+            height: 15vh;
+            border: none;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            position: fixed;
+
+
+        }
+
+        header img{
+            width: 12%;
+            height: 45px;
+            margin-left: 0.5%;
+
+        }
+        nav{
+            background-color: rgb(99, 99, 240);
+            width: 100vw;
+            height: auto;
+            display: flex;
+            position: relative;
+            align-items: center;
+            position: absolute;
+            top:50%;
+            position: fixed;
+            top:7.5%;
+
+        }
+
+        nav img{
+            color: aliceblue;
+            margin-left: 2em;
+            /* margin-top: 0.5em;
+            margin-bottom: 0.5em; */
+            width: 55px;
+            height: 55px;
+            
+
+        }
+
+        nav ul{
+            display: flex;
+            position: absolute;
+            right:2%;
+            /* margin-top: 0.5em;
+            margin-bottom: 0.5em; */
+
+
+           
+            
+
+        }
+
+        nav ul li{
+            list-style: none;
+            margin-right: 2em;
+            margin-left: 2em;
+           
+        }
+
+        nav ul li a{
+            color: aliceblue;
+            text-decoration: none;
+            font-size: 20px;
+
+
+        }
+
+        nav ul li a:hover{
+            text-decoration: underline;
+            
+        }
+
+        main{
+            background-color: white;
+            border: 2px solid beige;
+            width: 100vw;
+            height: 70%; 
+            border:none;
+            margin: 0;
+            padding: 0;
+           
+           
+
+        }
+
+        footer{
+            background-color: rgb(214, 210, 210);
+            border: 2px solid black; 
+            width: 100vw;
+            height: 15vh;
+            border:none;
+            margin: 0;
+            padding: 0;
+            
+            
+
+
+        }
+        nav ul li a :hover{
+            background-color: white;
+            color: blue;
+            
+
+        }
+        main img[alt="mainimg"]{
+            margin: 0;
+            padding: 0;
+            width: 50%;
+            height: 50%;
+            /* position: absolute;
+            top:120px;
+            left:50px; */
+           margin-top: 100px;
+           margin-bottom: 0;
+           
+
+        }
+        .myform{
+            border: 1px solid black;
+            width: 20em;
+            height:18em;
+            display: flex;
+            flex-direction: column;
+            /* position:absolute ;
+            top:40%;
+            right: 20%; */
+            padding:1em;
+            border-radius: 20px;
+            margin-left: 10em;
+            background-color: rgb(241, 240, 239);
+            
+           
+        }
+        .myusername{
+            
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+            margin-left: 1em;
+            margin-right: 1em;
+            border-radius: 10px;
+            border: 1px solid black;
+           
+        }
+        .mypassword{
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+            margin-left: 1em;
+            margin-right: 1em;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+        .subbutton{
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            margin-top: 1em;
+           
+            margin-left: 1em;
+            margin-right: 1em;
+            border-radius: 10px;
+            background-color:rgb(99, 99, 240);
+            border: 1px solid black;
+            color: white;
+        }
+        main form > div{
+            display: flex;
+            justify-content: center;
+            
+            
+        }
+        main form > div a{
+            margin-top: 1em;
+            
+           
+            
+        }
+        .createbutton{
+            width: 15em;
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            margin-top: 1em;
+           
+            margin-left: 1em;
+            margin-right: 1em;
+            border-radius: 10px;
+            background-color:rgb(41, 236, 41);
+            border: 1px solid black;
+            align-self: center;
+            
+        }
+        .createbutton a{
+            color: aliceblue;
+            font-style: bold;
+            text-decoration: none;
+        }
+        .section{
+            display: flex;
+            align-items: center;
+        }
+        .text{
+            margin-left: 10em;
+            display: block;
+        }
+        
+
+        .myusername:hover{
+            border: 1px solid blue;
+        }
+
+        .mypassword:hover{
+            border: 1px solid blue;
+        }
+        .subbutton:hover{
+            background-color: white;
+            border: 1px solid blue;
+            color: blue;
+        }
+        .createbutton:hover{
+            background-color: grey;
+            
+        }
+
+        .content{
+            display: flex;
+            margin-top: 1em;
+            margin-left: 1em;
+        }
+        .content2{
+            margin-top: 1em;
+            margin-left: 1em;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="backend.django" class="myform">
+        <label for="username">Username :</label>
+        <input type="text" id="username" class="myusername"  placeholder="enter email or mobile number">
+        <label for="username">Password :</label>
+        <input type="text" id="Password" class="mypassword" placeholder="enter password">
+        <input type="submit" value="submit" class="subbutton">
+        <div>
+        <a href="#">forget password</a> 
+        </div>
+        <hr>
+        <button class="createbutton"><a href="#" >create new account</a></button>
+    </form>
+</body>
+</html>

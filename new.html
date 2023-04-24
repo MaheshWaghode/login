@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+
+    }
+    body{
+        background-image: url(bike.jpg);
+        background-size: cover;
+    }
+   
+    
+    #header{
+        box-sizing: border-box;
+        display: block;
+        background-color: transparent;
+    }
+    .logo{
+        display: block;   
+    }
+    .logo img{
+        display: block;
+        width: 200px;
+        height: 150px;   
+    }
+    .navbar{
+        background-color:rgb(209, 46, 46);
+        align-items: center;
+    }
+
+
+
+    .navbar li{
+        display: inline-block;
+        list-style: none;
+        padding: 11px;
+        margin-right: 25px;
+        margin-left: 25px;
+        /* margin-top: 5px;
+        margin-bottom: 5px; */
+        border-radius: 10px;
+       
+       
+        border: 2px solid black;
+        
+        background-color: white;
+        
+        
+    }
+   
+    .navbar li a{
+        text-decoration: none;
+        color: black;
+    }
+    .img1{
+        position: absolute;
+        right: 20px;
+        top:150px;
+    }
+    .img2{
+        position: absolute;
+        right: 90px;
+        top:160px;
+        
+    }
+    .navbar li:hover{
+        background-color: rgb(94, 94, 185);
+    }
+    .navbar li a:hover{
+        color:aliceblue
+    }
+    .form{
+        background-color: aliceblue;
+        display: inline-block;
+        position: absolute;
+        top: 300px;
+        right: 200px;
+        border-radius: 20px;
+        height: 280px;
+    }
+    .form li{
+        list-style: none;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .myusername{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 10px;
+    }
+    .mypassword{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        position: absolute;
+        right: 20px;
+        border-radius: 10px;
+    }
+    .button a{
+       text-decoration: none;
+       padding-right: 67px;
+       padding-left: 67px;
+       padding-top: 20px;
+       padding-bottom: 20px;
+       color: aliceblue;
+      
+    }
+    .button a:hover{
+        color: #000;
+        
+    }
+    .button{
+        margin-left: 70px;
+        margin-top: 17px;
+        margin-bottom: 10px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        background-color: rgb(107, 107, 240);
+        border-radius: 10px;
+        border-style: none;
+    }
+    .button:hover{
+    background-color: white;
+    border: 2px solid black;
+    }
+    .forget{
+        margin-left: 20px;
+    }
+    .para{
+        display: inline-block;
+        float: left;
+        border: 2px solid black;
+        border-style: none;
+        width: 500px;
+        position: absolute;
+        top:300px;
+        left:50px;
+        color: red;
+        
+    }
+    .searchbar{
+        position: absolute;
+        right:130px;
+        top:162px;
+        width: 350px;
+        border-radius: 10px;
+    }
+    .heading{
+        color: black;
+    }
+   
+
+</style>
+<body>
+    <header id="header">
+        <div class="logo">
+            <img src="Logo.png" alt="">
+        </div class="navback">
+        <nav>
+            <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+
+         </nav>
+         <input type="text" class="searchbar" placeholder="search here" >
+        <img src="id.png" alt="" width="45px" height="45px" class="img1">
+        <img src="searchicon.png" alt="" width="25px" height="25px" class="img2">
+        
+    </header>
+    <main id="main1" class="main">
+        <div class="para">
+        <h2 class="heading"><pre>welcome to indian motorcycle         
+        </pre></h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident fugiat enim deserunt commodi qui eum accusamus modi maxime! Quo ea porro ipsam voluptate. Nostrum commodi itaque provident sit? Quia, ut!e exercitationem quam harum numquam provident? Voluptatum ut fuga corporis incidunt nisi velit vitae n</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat cum ea fugiat excepturi maxime magni quibusdam velit quod quas earum veniam totam doloremque saepe, esse accusamus assumenda laborum ex! Voluptates sunt aperiam rem esse accusantium alias natus quasi, quibusdam fuga nam modi nemo, ea, doloribus dolor aliquam vitae dignissimos quam?</p>
+    </div>
+        <fieldset class="form">
+           
+           <li><h3>Login </h3></li>
+            <li><label for="username"> Username</label>
+            <input type="text" id="username" class="myusername" placeholder="username" autofocus></li>
+            <li><label for="password">password</label>
+            <input type="password" class="mypassword" placeholder="password"></li>
+            <li><button class="button"><a href="submit.html">Submit</a></button></li>
+            <hr>
+            <div class="forget">
+                <a href="#">forget password</a> /
+                <a href="#"> creatw a new account</a>
+            </div>
+
+        </fieldset>
+       
+
+    </main>
+   <footer id="footer">
+    
+
+   </footer>
+    
+</body>
+</html>

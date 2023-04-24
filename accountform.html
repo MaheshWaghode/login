@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+           
+        }
+        body{
+            background-color: rgb(241, 241, 241);
+        }
+        .container{
+            border: 1px solid white;
+            width: 37rem;
+            border-radius: 0.8rem;
+            position: absolute;
+            bottom: 0;
+            right: 22rem;
+            background-color: white;
+            
+
+
+        }
+
+        .container h1{
+            margin-left: 3rem;
+
+        }
+        .para0{
+            margin-left: 3rem;
+            margin-top: 0.1rem;
+            margin-bottom: 0.2rem;
+        }
+
+        /* .cross{
+           position: relative;
+           margin: 0;
+           padding: 0;
+          
+
+        }
+
+        .incross{
+            position: absolute;
+            right: 5%;
+           top:0px;
+           margin: 0;
+           padding: 0;
+        } */
+        .firstflex{
+            display: flex;
+            margin: 0;
+            padding: 0;
+           
+             
+
+        }
+        input[name="myfirstname"]{
+           width: 14rem;
+           height: 2rem;
+           border: 1px solid rgb(196, 194, 194);
+           border-radius: 0.3rem;
+           margin-right: 2rem;
+           margin-left: 3rem;
+           margin-bottom: 1rem;
+           margin-top: 1rem;
+           background-color:rgb(219, 218, 218);
+        }
+        input[name="mylastname"]{
+            width: 14rem;
+           height: 2rem;
+           border: 1px solid rgb(185, 184, 184);
+           border-radius: 0.3rem;
+           margin-right: 3rem;
+           overflow: auto;
+           margin-bottom: 1rem;
+           margin-top: 1rem;
+           background-color: rgb(219, 218, 218);
+        }
+
+        input[name="myemail"]{
+            width: 31rem;
+           height: 2rem;
+           border: 1px solid rgb(196, 194, 194);
+           border-radius: 0.3rem;
+           margin-left: 3rem;
+           margin-bottom: 1rem;
+           background-color: rgb(219, 218, 218);
+            
+        }
+
+        input[name="mypassword"]{
+            width: 31rem;
+           height: 2rem;
+           border: 1px solid rgb(196, 194, 194);
+           border-radius: 0.3rem;
+           margin-left: 3rem;
+           margin-bottom: 1rem;
+           background-color: rgb(219, 218, 218);
+            
+        }
+
+
+        .DOB{
+            margin: 0;
+            padding: 0;
+            
+        }
+        
+        .DOB p{
+            margin-left: 3rem;
+            font-family:monospace;
+           font-size: 15px;
+        }
+        input[list="day"]{
+            width: 9rem;
+           height: 2rem;
+           border: 1px solid rgb(196, 194, 194);
+           border-radius: 0.3rem;
+           margin-left: 3rem;
+           margin-right: 2rem;
+           margin-bottom: 1rem;
+
+        }
+
+        input[list="month"]{
+            width: 9rem;
+           height: 2rem;
+           border: 1px solid rgb(196, 194, 194);
+           border-radius: 0.3rem;
+          
+           margin-right: 2rem;
+           margin-bottom: 1rem;
+
+        }
+        input[list="year"]{
+            width: 9rem;
+           height: 2rem;
+           border: 1px solid rgb(196, 194, 194);
+           border-radius: 0.3rem;
+          
+           margin-right: 2rem;
+           margin-bottom: 1rem;
+
+        }
+       
+
+        .gender{
+            display: flex;
+            
+           
+            
+        } 
+        .genderheading{
+            margin-left: 3rem;
+           font-family:monospace;
+           
+           font-size: 15px;
+
+        }
+
+
+        .gender1{
+            border: 1px solid rgb(196, 194, 194);
+            width: 9rem;
+           height: 2rem;
+           border: 1px solid rgb(196, 194, 194);
+           border-radius: 0.3rem;
+          margin-left: 3rem;
+           margin-right: 2rem;
+           margin-bottom: 1rem;
+        }
+
+        .gender2{
+            border: 1px solid rgb(196, 194, 194);
+            width: 9rem;
+           height: 2rem;
+           border: 1px solid rgb(196, 194, 194);
+           border-radius: 0.3rem;
+          
+           margin-right: 2rem;
+           margin-bottom: 1rem;
+        }
+
+        .gender3{
+            border: 1px solid rgb(196, 194, 194);
+            width: 9rem;
+           height: 2rem;
+           border: 1px solid rgb(196, 194, 194);
+           border-radius: 0.3rem;
+          
+           margin-right: 2rem;
+           margin-bottom: 1rem;
+        }
+
+
+        input[name="myfirstname"]::placeholder{
+            padding-left: 1rem;
+        }
+
+        input[name="mylastname"]::placeholder{
+            padding-left: 1rem;
+        }
+
+        input[name="myemail"]::placeholder{
+            padding-left: 1rem;
+        }
+
+        input[name="mypassword"]::placeholder{
+            padding-left: 1rem;
+        }
+        input[list="day"]::placeholder{
+            padding: 1rem;
+        }
+        input[list="month"]::placeholder{
+            padding: 1rem;
+        }
+        input[list="year"]::placeholder{
+            padding: 1rem;
+        }
+
+       .gender1{
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+       justify-content: space-between;
+       }
+
+       .gender2{
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+       justify-content: space-between;
+       }
+
+       .gender3{
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+       justify-content: space-between;
+       }
+
+       .para1{
+        margin-left: 3rem;
+        margin-right: 3rem;
+        margin-bottom: 1rem;
+       }
+
+       .para2{
+        margin-left: 3rem;
+        margin-right: 3rem;
+        margin-bottom: 1rem;
+
+       }
+
+       .signupbutton{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    
+       }
+
+       .signupbutton input[type="submit"]{
+           width: 15rem;
+           height: 2.3rem;
+           border: 1px solid black;
+           border: none;
+           border-radius: 0.3rem;
+           margin-bottom: 2rem;
+           background-color: rgb(7, 145, 7);
+           
+
+       }
+
+       .signupbutton input[value="Sign Up"]{
+        color: white;
+        font-size: 1rem;
+        font-style:bold;
+        font-family: Arial, Helvetica, sans-serif;
+       }
+
+      option:default{
+       background-color: rgb(44, 44, 252);
+       color: blue;
+       }
+
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sign Up</h1>
+        <p class="para0">its quick and easy</p>
+        <!-- <div class="cross">
+            <div class="incross">
+            &#10006;
+        </div>
+        </div> -->
+        <hr>
+        <form action="backend.php">
+            <div class="firstflex>
+                <label for="firstname"></label>
+                <input type="text" name="myfirstname" id="firstname" placeholder="First Name" required>
+                <label for="lastname"></label>
+                <input type="text" name="mylastname" id="lastname" placeholder="Surname"  required>
+            </div>
+            <label for="email"></label>
+            <input type="email,number" name="myemail" id="email" placeholder="Mobile No or Email Adress" required>
+            <label for="password"></label>
+            <input type="password" name="mypassword" id="password" placeholder=" New Password" required>
+
+            <div class="DOB">
+                <p>Date of birth &#63;</p>
+                <input list="day" name="myday" id="theday"  required>
+                <datalist id="day">
+                    <option value="1" selected></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                    <option value="6"></option>
+                    <option value="7"></option>
+                    <option value="8"></option>
+                    <option value="9"></option>
+                    <option value="10"></option>
+                    <option value="11"></option>
+                    <option value="12"></option>
+                    <option value="13"></option>
+                    <option value="14"></option>
+                    <option value="15"></option>
+                    <option value="16"></option>
+                    <option value="17"></option>
+                    <option value="18"></option>
+                    <option value="19"></option>
+                    <option value="20"></option>
+                    <option value="21"></option>
+                    <option value="22"></option>
+                    <option value="23"></option>
+                    <option value="24"></option>
+                    <option value="25"></option>
+                    <option value="26"></option>
+                    <option value="27"></option>
+                    <option value="28"></option>
+                    <option value="29"></option>
+                    <option value="30"></option> 
+                    <option value="31"></option>
+
+                </datalist>
+                
+                <input list="month" name="mymonth" id="themonth"  required>
+                <datalist id="month">
+                    <option value="Jan" selected></option>
+                    <option value="Feb"></option>
+
+                    <option value="March"></option>
+
+                    <option value="April"></option>
+
+                    <option value="May"></option>
+
+                    <option value="June"></option>
+
+                    <option value="July"></option>
+
+                    <option value="Aug"></option>
+
+                    <option value="Sep"></option>
+
+                    <option value="Oct"></option>
+
+                    <option value="Nov"></option>
+
+                    <option value="Des"></option>
+
+                </datalist>
+
+                <input list="year" name="myyear" id="theyear" required>
+                <datalist id="year">
+                   
+                    <option value="2001" selected></option>
+                    <option value="2002"></option>
+                    <option value="2003"></option>
+                    <option value="2004"></option>
+                    <option value="2005"></option>
+                    <option value="2006"></option>
+                    <option value="2007"></option>
+                    <option value="2008"></option>
+                    <option value="2009"></option>
+                    <option value="2010"></option>
+                    <option value="2011"></option>
+                    <option value="2012"></option>
+                    <option value="2013"></option>
+                    <option value="2014"></option>
+                    <option value="2015"></option>
+                    <option value="2016"></option>
+                    <option value="2017"></option>
+                    <option value="2018"></option>
+                    <option value="2019"></option>
+                    <option value="2020"></option>
+                    <option value="2021"></option>
+                    <option value="2022"></option>
+                    <option value="2023"></option>
+                    
+
+                </datalist>
+            </div>
+
+
+            <div class="genderheading">
+           <p>Gender &#63;</p>
+           </div>
+            <div class="gender">
+                
+                <div class="gender1">
+                    <label for="male" value="Male">Male</label>
+                    <input type="radio"name="mygender" id="male" selected>
+                </div>
+
+                <div class="gender2">
+                    <label for="female" value="Female">Female</label>
+                    <input type="radio"name="mygender" id="female">
+                </div>
+
+                <div class="gender3">
+                    <label for="custom" value="Custom">Custom</label>
+                    <input type="radio"name="mygender" id="custom">
+                </div>
+            </div>
+           <p class="para1"> People who use our service may have uploaded your contact information to Facebook. <a href="#">learn more</a></p>
+
+           <p class="para2">By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="#">Privacy</a>, <a href="#">Policy</a> and <a href="#">Cookies Policy</a>. You may receive SMS notifications from us and can opt out at any time.</p>
+        </form>
+         <div class="signupbutton">
+        <input type="submit" value="Sign Up" >
+        </div>
+
+    </div>
+    
+    
+</body>
+</html>
